@@ -7,3 +7,5 @@ Observer
 Strategy
 Command
 Adapter
+State
+Template

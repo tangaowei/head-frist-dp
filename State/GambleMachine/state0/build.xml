@@ -1,0 +1,27 @@
+<project name="stateMode0" default="compile">
+
+<property name="src" value="src"/>
+<property name="build" value="build"/>
+<property name="main" value="GumballMachineTestDrive"/>
+
+<target name="init">
+  <mkdir dir="${build}" />
+</target>
+
+<target name="compile" depends="clean,init">
+  <javac srcdir="${src}" destdir="${build}" debug="true">
+  </javac>
+</target>
+
+<target name="run" depends="compile">
+  <java classname="${main}">
+    <classpath>
+      <pathelement location="${build}"/>
+    </classpath>
+  </java>
+</target>
+
+<target name="clean">
+  <delete dir="${build}"/>
+</target>
+</project>
