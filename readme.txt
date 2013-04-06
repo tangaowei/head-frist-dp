@@ -9,3 +9,4 @@ Command
 Adapter
 State
 Template
+Iterator
