@@ -10,3 +10,4 @@ Adapter
 State
 Template
 Iterator
+Composite
